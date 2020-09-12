@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>Payment Details</title>
+<script>
+
+function formvalidation()
+{
+	var uname = document.registration.username;
+	var ph = document.registration.ph;
+	var amt = document.registration.amt;
+	var uemail = document.registration.email;
+	if(allletter(uname))
+	{
+		if(allnumeric(ph))
+		{
+			if(ValidateEmail(uemail))
+			{
+				if(allnumeric(amt))
+				{
+					alert("Payment Successful !");
+				}
+			}
+		}
+	}
+	return false;
+}
+
+function allletter(uname)
+{
+	var letters = /^[A-Za-z]+$/;
+	if(uname.value.match(letters))
+	{
+		return true;
+	}
+	else
+	{
+		uname.focus();
+		return false;
+	}
+}
+
+function allnumeric(ph)
+{
+	var numbers = /^[0-9]+$/;
+	if(ph.value.match(numbers))
+	{
+		return true;
+	}
+	else
+	{
+		ph.focus();
+		return false;
+	}
+}
+
+function allnumeric(amt)
+{
+	var numbers = /^[0-9]+$/;
+	if(amt.value.match(numbers))
+	{
+		return true;
+	}
+	else
+	{
+		amt.focus();
+		return false;
+	}
+}
+
+function ValidateEmail(uemail)
+{
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if(uemail.value.match(mailformat))
+	{
+		return true;
+	}
+	else
+	{
+		uemail.focus();
+		return false;
+	}
+} 
+
+</script>
+<style>
+body
+{
+	background-image: url('books.jpg');
+}
+.b
+{
+	font-size: 15pt;
+	color: white;
+	font-family: "Georgia", Times, serif;
+}
+.v
+{
+	font-size: 25pt;
+	color: white;
+	font-family: "Georgia", Times, serif;
+}
+::placeholder
+{
+	color: red;
+}
+select
+{
+	width: 170px;
+}
+label
+{
+	color: red;
+}
+.h
+{
+  font-family: "Georgia", Times, serif;
+  color: white;
+  background-color: #eb0000;
+  font-weight:bold;
+  font-size: 35px;
+}
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li
+{
+  float: left;
+}
+
+li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  font-family: "Georgia", Times, serif;
+  font-size: 17px;
+}
+
+li a:hover
+{
+  background-color: #111;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 54px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: #111;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 214px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 50px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px; 
+  text-align: center;
+}
+
+.dropdown-content a:hover, .f {
+  background-color: #ddd;
+  padding: 14px 50px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+</style>
+</head>
+<body>
+	<div align="center"><h1 class="h">TWIX BOOKS</h1></div>
+	<ul>
+		<li><a class="active" href="Store.html">Home</a></li>
+		<div class="dropdown">
+			<button class="dropbtn">Book Categories</button>
+			<div class="dropdown-content">
+				<a href="Catalog.html#a1">Science Fiction</a>
+				<a href="Catalog.html#a2">Mystery-Thrillers</a>
+				<a href="Catalog.html#a3">Autobiographies</a>
+			</div>
+		</div>
+		<li><a href="Catalog.html">Our Catalog</a></li>	  
+	</ul>
+	</br>
+	<h1 class="v"><center><strong>Payment Details</strong></center></h1>
+	<form name="registration" action="/action_page.php" onsubmit="return formvalidation()" method="post">  
+		<center>
+		<table cellspacing="30">
+			<tr>
+				<td align="right" class="b">Name:</td>
+				<td align="left"><input pattern="[A-Za-z]*" name="username" placeholder="*Required; Must include alphabets alone" size="95" style="font-size:15pt"></td>
+			</tr>
+			<tr>
+				<td align="right" class="b">Phone Number:</td>
+				<td align="left"><input type="ph" name="ph" placeholder="*Required; Must be numeric" size="95" style="font-size:15pt"></td>
+			</tr>
+			<tr>
+				<td align="right" class="b">Email:</td>
+				<td align="left"><input type="email" name="email" placeholder="*Required; Must be a valid mail ID" size="95" style="font-size:15pt"></td>
+			</tr>
+			<tr>
+				<td align="right" class="b">Amount:</td>
+				<td align="left"><input type="amount" name="amt" placeholder="*Required; Must be numeric" size="95" style="font-size:15pt"></td>
+			</tr>
+			<tr>
+				<td>
+				<label for="mode" class="b">Payment Mode:</label></td>
+					<td><select name="mode" id="mode">
+						<option value="Credit Card">Credit Card</option>
+						<option value="Debit Card">Debit Card</option>
+						<option value="UPI ID">UPI ID</option>
+						<option value="QR Code">QR Code</option>
+					</select></td>
+				<br><br>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" value="Submit"></center></td>
+			</tr>
+		</table>
+		</center>
+	</form>
+</body>
+</html>

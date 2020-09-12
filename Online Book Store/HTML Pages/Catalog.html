@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>TWIX Books Online</title>
+<style>
+.h
+{
+  font-family: "Georgia", Times, serif;
+  color: white;
+  background-color: #eb0000;
+  font-weight:bold;
+  font-size: 35px;
+}
+.d
+{
+  font-family: "Times New Roman", Times, serif;
+}
+.b
+{
+  font-family: "Georgia", Times, serif;
+  color: black;
+  background-color: white;
+  text-align: left;
+}
+body
+{
+  background-image: url('books.jpg');
+}
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li
+{
+  float: left;
+}
+
+li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  font-family: "Georgia", Times, serif;
+  font-size: 17px;
+}
+
+li a:hover
+{
+  background-color: #111;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 54px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: #111;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 214px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 50px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px; 
+  text-align: center;
+}
+
+.dropdown-content a:hover, .f {
+  background-color: #ddd;
+  padding: 14px 50px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+  <div align="center"><h1 class="h">TWIX BOOKS</h1></div>
+  <ul>
+	<li><a class="active" href="Store.html">Home</a></li>
+	<div class="dropdown">
+		<button class="dropbtn">Book Categories</button>
+		<div class="dropdown-content">
+			<a href="Catalog.html#a1">Science Fiction</a>
+			<a href="Catalog.html#a2">Mystery-Thrillers</a>
+			<a href="Catalog.html#a3">Autobiographies</a>
+		</div>
+	</div>
+	<li><a href="Catalog.html">Our Catalog</a></li>	  
+   </ul>
+
+<div class="b"><h3 class="f" >OUR BOOKS' CATALOG</h3> 
+<br><h2 class="d" id="a1">Science Fiction</h2><br>
+<p class="d">
+<form action="Form.html" method="post">
+  <input type="checkbox" id="dune" name="dune" value="FH">
+  <img src="dune.jpg" alt="Dune Cover" width="100" height="150"><br>
+  <label for="dune">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: DUNE<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Frank Herbert</label><br><br>
+  <input type="checkbox" id="2001" name="2001" value="ACC">
+  <img src="2001.jpg" alt="2001 Cover" width="100" height="150"><br>
+  
+  <label for="2001">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: 2001: A Space Odyssey<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Arthur C. Clarke</label><br><br>
+  <input type="checkbox" id="ttw" name="ttw" value="AN">
+  <img src="ttw.jpg" alt="Time Traveller's Wife Cover" width="100" height="150"><br>
+  
+  <label for="ttw">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: The Time Traveler’s Wife<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Audrey Niffenegger</label><br><br><br><br>
+  <h2 class="d" id="a2">Mystery-Thrillers</h2><br>
+  <input type="checkbox" id="davinci" name="davinci" value="DB">
+  <img src="dvc.jpg" alt="Da Vinci Code Cover" width="100" height="150"><br>
+  
+  <label for="davinci">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: The Da Vinci Code<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Dan Brown</label><br><br>
+  <input type="checkbox" id="orient" name="orient" value="AC">
+  <img src="orient.jpg" alt="Murder On The Orient Express Cover" width="100" height="150"><br>
+  
+  <label for="orient">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: Murder on the Orient Express<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Agatha Christie</label><br><br>
+  <input type="checkbox" id="ts" name="ts" value="SK">
+  <img src="ts.jpg" alt="The Shining Cover" width="100" height="150"><br>
+  
+  <label for="ts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: The Shining<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Stephen King</label><br><br><br><br>
+  <h2 class="d" id="a3">Autobiographies</h2><br>
+  <input type="checkbox" id="freedom" name="freedom" value="NM">
+  <img src="lwtf.jpg" alt="Long Walk To Freedom Cover" width="100" height="150"><br>
+  
+  <label for="freedom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: Long Walk to Freedom<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Nelson Mandela</label><br><br>
+  <input type="checkbox" id="mein" name="mein" value="AH">
+  <img src="mein.jpg" alt="Mein Kampf Cover" width="100" height="150"><br>
+  
+  <label for="mein">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: Mein Kampf<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Adolf Hitler</label><br><br>
+  <input type="checkbox" id="acab" name="acab" value="AGCH">
+  <img src="agch.jpg" alt="Agatha Christie's Autobiography Cover" width="100" height="150"><br>
+  
+  <label for="acab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBook Title: Agatha Christie: An Autobiography<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Agatha Christie</label><br><br><br><br><br><br>
+  <div style="text-align:center"><a href="Form.html"><input type="submit" value="Submit"></a></div><br><br><br>
+</p>	
+</div>
+</body>
+</html>
