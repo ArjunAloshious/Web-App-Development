@@ -27,24 +27,6 @@
      Welcome to Tomcat
   </description>
   
-  <servlet>
-   <servlet-name>HelloPrintURL</servlet-name>
-   <servlet-class>HelloPrintURL</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>HelloPrintURL</servlet-name>
-   <url-pattern>/HelloPrintURL</url-pattern>
-</servlet-mapping>
-<servlet>
-   <servlet-name>helloform</servlet-name>
-   <servlet-class>helloform</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>helloform</servlet-name>
-   <url-pattern>/helloform</url-pattern>
-</servlet-mapping>
 <servlet>
    <servlet-name>First</servlet-name>
    <servlet-class>First</servlet-class>
@@ -55,6 +37,16 @@
    <url-pattern>/First</url-pattern>
 </servlet-mapping>
 
+ <servlet>
+   <servlet-name>Second one</servlet-name>
+   <servlet-class>FirstServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Second one</servlet-name>
+   <url-pattern>/FirstServlet</url-pattern>
+</servlet-mapping>
+ 
 <servlet>
    <servlet-name>Third one</servlet-name>
    <servlet-class>SrvltJust1</servlet-class>
@@ -65,17 +57,6 @@
    <url-pattern>/SrvltJust1</url-pattern>
 </servlet-mapping>
 
-
-<servlet>
-   <servlet-name>Second one</servlet-name>
-   <servlet-class>FirstServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>Second one</servlet-name>
-   <url-pattern>/FirstServlet</url-pattern>
-</servlet-mapping>
-
 <servlet>
    <servlet-name>HelloPost</servlet-name>
    <servlet-class>HelloPost</servlet-class>
@@ -84,53 +65,6 @@
 <servlet-mapping>
    <servlet-name>HelloPost</servlet-name>
    <url-pattern>/HelloPost</url-pattern>
-</servlet-mapping>
-<servlet>
-   <servlet-name>UserDetails</servlet-name>
-   <servlet-class>UserDetails</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>UserDetails</servlet-name>
-   <url-pattern>/UserDetails</url-pattern>
-</servlet-mapping>
-
-<servlet>
-   <servlet-name>AppServlet</servlet-name>
-   <servlet-class>AppServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>AppServlet</servlet-name>
-   <url-pattern>/AppServlet</url-pattern>
-</servlet-mapping>
-<servlet>
-   <servlet-name>LoginServlet</servlet-name>
-   <servlet-class>LoginServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>LoginServlet</servlet-name>
-   <url-pattern>/LoginServlet</url-pattern>
-</servlet-mapping>
-<servlet>
-   <servlet-name>Fail</servlet-name>
-   <servlet-class>Fail</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>Fail</servlet-name>
-   <url-pattern>/Fail</url-pattern>
-</servlet-mapping>
-
-<servlet>
-   <servlet-name>Success</servlet-name>
-   <servlet-class>Success</servlet-class>
-</servlet>
-
-<servlet-mapping>
-   <servlet-name>Success</servlet-name>
-   <url-pattern>/Success</url-pattern>
 </servlet-mapping>
 
 </web-app>
