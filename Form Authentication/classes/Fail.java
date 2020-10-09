@@ -6,9 +6,7 @@ public class Fail extends HttpServlet {
   protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
     res.setContentType("text/html");  
     PrintWriter out = res.getWriter();
-	String name=req.getParameter("username");  
-    String pass=req.getParameter("password");
-	out.print("<html><head><title>Authentication Failed</title></head><body><center><h1>Authentication Status : Failed</h1><center></body></html>"); 	
-	out.close();  
+    out.print("<html><head><title>Authentication Failed</title></head><body><center><h1>Authentication Status : Failed</h1><center></body></html>"); 	
+    out.close();  
   }
 }
