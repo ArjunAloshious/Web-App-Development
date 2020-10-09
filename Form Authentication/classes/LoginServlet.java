@@ -2,9 +2,10 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
  
-public class LoginServlet extends HttpServlet {
- 
-  protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+public class LoginServlet extends HttpServlet 
+{ 
+  protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException 
+  {
     String name=req.getParameter("username");  
     String pass=req.getParameter("password");          
     res.setContentType("text/html");  
