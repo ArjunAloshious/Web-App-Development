@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Exam Login</title>
+		<style>
+			.bg
+			{
+				background-image: url('pencil.jpg');
+				background-size: 800px 650px; height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="width: 100%;">
+			<div style="float:left; width: 50%">
+				<center>
+				<h1>Sign In</h1>
+					<form method="post" action="http://localhost:8080/ExamLogin">
+					<br>
+						<table bgcolor = "#f0f0f0" cellspacing="20">
+							<tr></tr>
+							<tr>
+								<td align="right">Name: <input type = "text" name = "username" required><br></td>
+							</tr>
+							<tr>
+								<td align="right">Password: <input type = "text" name = "password" required></td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td align="center"><input type = "submit" value = "Sign-in">
+						</table>
+					</form>
+				</center>
+				<h2 style="text-align:right;">OR</h2>
+			</div>
+			<form action="http://localhost:8080/Registration.html">
+				<div style="float:right; width: 50%" class="bg">
+					<center><h1>Don't have an account?</h1><h2>Click the button below to Register.</h2>
+					<br><input type = "submit" value = "Register Now">
+					</center>
+				</div>
+			</form>
+		</div>
+			<div style="clear:both">
+		</div>
+	</body>
+</html>

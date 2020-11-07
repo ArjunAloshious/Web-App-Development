@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Online Exam</title>
+<style>
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li
+{
+  float: left;
+}
+li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  font-family: "Georgia", Times, serif;
+  font-size: 17px;
+}
+li a:hover
+{
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="DS.html">Data Structures</a></li>
+		<li><a href="OS.html">Operating Systems</a></li>	 
+		<li><a href="DB.html">Database Management</a></li>	 		
+	</ul>
+	<br>
+	<center><h2>Database Management</h2></center>
+	<form method="post" action="http://localhost:8080/Result.jsp">
+	<h3>Q1) The key that uniquely identifies each record is called ?</h3>
+	<input type="radio" id="q1.1" name="q1" value="q1.1">
+	<label for="q1.1">Primary key</label><br>
+	<input type="radio" id="q1.2" name="q1" value="q1.2">
+	<label for="q1.2">Unique key</label><br>
+	<h3>Q2) Which database level is closest to the users ?</h3>
+	<input type="radio" id="q2.1" name="q2" value="q2.1">
+	<label for="q2.1">External</label><br>
+	<input type="radio" id="q2.2" name="q2" value="q2.2">
+	<label for="q2.2">Physical</label><br>
+	<h3>Q3) DBA stands for ?</h3>
+	<input type="radio" id="q3.1" name="q3" value="q3.1">
+	<label for="q3.1">Database Administrator</label><br>
+	<input type="radio" id="q3.2" name="q3" value="q3.2">
+	<label for="q3.2">Data Bank Access</label><br><br><br>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>
